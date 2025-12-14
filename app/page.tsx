@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <main>
       <section className="flex flex-col justify-end items-center pb-20 bg-[url('/home-img.jpg')] bg-cover bg-center h-screen">
-        <h1 className="text-[4em] text-white font-bold">let's get lost...</h1>
-        <Link href="/destinations" className="flex justify-center items-center text-[4em] text-white font-light gap-4">
+        <h1 className="text-[4em] text-white font-bold drop-shadow-lg">let's get lost...</h1>
+        <Link href="/destinations" className="flex justify-center items-center text-[4em] text-white font-light gap-4 drop-shadow-lg">
           plan your journey
           <img src="arrow.png" className='w-8 h-12'/>
         </Link>

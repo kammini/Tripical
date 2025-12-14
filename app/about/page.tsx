@@ -2,7 +2,7 @@ export default function About() {
   return(
     <main>
       <section className="bg-[url('/bromo.jpg')] bg-cover bg-center h-120 flex justify-center items-center">
-        <h1 className="text-white text-4xl font-medium">About Tripical</h1>
+        <h1 className="text-white text-4xl font-medium drop-shadow-lg">About Tripical</h1>
       </section>
 
       <section className="flex justify-center items-center gap-20 p-10">
