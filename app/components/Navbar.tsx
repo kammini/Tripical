@@ -8,10 +8,9 @@ export default function Navbar() {
           <img src="logo.png" alt="Tripical Logo" className="w-24 h-auto" />
         </Link>
         <div className="flex items-center gap-8">
-          <Link href="/about" className="text-gray-600 hover:text-gray-900">Destinations</Link>
           <Link href="/details" className="text-gray-600 hover:text-gray-900">Details</Link>
           <Link href="/about" className="text-gray-600 hover:text-gray-900">About Us</Link>
-          <Link href="/about" className="text-gray-600 hover:text-gray-900">Contact Us</Link>
+          <Link href="/contact" className="text-gray-600 hover:text-gray-900">Contact Us</Link>
         </div>
       </nav>
     </header>
