@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import { motion } from 'framer-motion'
 
-import surfing from '../assets/surfing.jpg'
+import surfing from '../assets/surfing.jpeg'
 import sunset from '../assets/sunset.jpeg'
 import beach from '../assets/beach.jpeg'
 import fiveguys from '../assets/5guys.jpeg'
