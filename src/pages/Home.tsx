@@ -1,11 +1,6 @@
 import { Link } from "react-router-dom"
 import { motion } from 'framer-motion'
 
-import homeImg from '../assets/home-img.jpg'
-import homeImg2 from '../assets/home-img-2.jpg'
-import bali from '../assets/bali.jpg'
-import bromo from '../assets/bromo.jpg'
-import ijen from '../assets/ijen.jpg'
 import surfing from '../assets/surfing.jpg'
 import sunset from '../assets/sunset.jpeg'
 import beach from '../assets/beach.jpg'

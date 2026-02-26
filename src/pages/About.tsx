@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import type { Variants } from 'framer-motion'
 import greenCanyon2 from '../assets/greenCanyon2.jpg'
 import naturalGas from '../assets/naturalGas.jpg'
 
@@ -12,7 +13,7 @@ const sectionVariants = {
 		opacity: 1,
 		transition: {
 			duration: 0.8,
-      ease: 'easeInOut'
+      ease: 'easeInOut' as const 
 		},
 	},
 }
@@ -27,12 +28,12 @@ const imageVariants = (fromLeft: boolean) => ({
 		x: 0,
 		Transition: {
 			duration: 0.8,
-			ease: 'easeInOut'
+			ease: 'easeInOut' as const
 		}
 	}
 })
 
-const textVariants = (fromLeft: boolean) => ({
+const textVariants = (fromLeft: boolean): Variants => ({
 	offscreen: {
 		opacity: 0,
 		x: fromLeft ? -100 : 100
@@ -43,7 +44,7 @@ const textVariants = (fromLeft: boolean) => ({
 		transition: {
 			duration: 0.8,
 			delay: 0.2,
-			ease: 'easeInOut'
+			ease: 'easeInOut' as const
 		}
 	}
 })
@@ -96,7 +97,7 @@ export default function About() {
 						</motion.div>
 						<motion.div
 								className="w-full md:w-1/2"
-								intial="offscreen"
+								initial="offscreen"
 								whileInView="onscreen"
 								viewport={{ once: true, amount: 0.5 }}
 								variants={textVariants(true)}
