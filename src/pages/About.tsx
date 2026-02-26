@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
-import bromo from '../assets/bromo.jpg'
-import bali from '../assets/bali.jpg'
+import greenCanyon2 from '../assets/greenCanyon2.jpg'
+import naturalGas from '../assets/naturalGas.jpg'
 
 const sectionVariants = {
 	offscreen: {
@@ -89,7 +89,7 @@ export default function About() {
 							whileHover={{ scale: 1.05, transition: { type: "spring" as const, stiffness: 300 }}}
 						>
 							<img 
-									src={bali}
+									src={greenCanyon2}
 									alt="Balinese temple"
 									className="w-full h-auto rounded-xl shadow-lg"
 							/>
@@ -139,7 +139,7 @@ export default function About() {
 							whileHover={{ scale: 1.05, transition: { type: "spring" as const, stiffness: 300 }}}
 						>
 								<img 
-									src={bromo}
+									src={naturalGas}
 									alt="Mount Bromo at sunrise"
 									className='w-full h-auto rounded-xl shadow-lg'
 								/>

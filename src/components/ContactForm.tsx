@@ -28,10 +28,24 @@ const ContactForm = () => {
     setServerMessage('');
     setIsSuccess(false);
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      setIsSuccess(true);
-      setServerMessage('Success! Your message has been sent.')
-      reset();
+      const response = await fetch('http://localhost:5001/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setIsSuccess(true);
+        setServerMessage(result.status || 'Success! Your message has been sent.');
+        reset();
+      } else {
+        setIsSuccess(false);
+        setServerMessage(result.message || 'Error: Failed to send message.');
+      }
     } catch (error: any) {
       setIsSuccess(false);
       setServerMessage(`Error: ${error.message || 'Failed to send message.'}`)

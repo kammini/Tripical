@@ -1,4 +1,4 @@
-import ijen from '../assets/ijen.jpg'
+import nightSky from '../assets/nightSky.jpg'
 import { motion } from 'framer-motion'
 
 const cardVariants = {
@@ -23,7 +23,7 @@ export default function Details() {
         <>
 					<section 
 						className='relative bg-cover bg-center h-80 flex justify-center items-center text-white'
-						style={{ backgroundImage: `url(${ijen})` }}
+						style={{ backgroundImage: `url(${nightSky})` }}
 					>
 						<div className='absolute inset-0 bg-black opacity-50'></div>
 						<motion.div

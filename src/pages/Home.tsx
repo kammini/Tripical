@@ -7,12 +7,17 @@ import bali from '../assets/bali.jpg'
 import bromo from '../assets/bromo.jpg'
 import ijen from '../assets/ijen.jpg'
 import surfing from '../assets/surfing.jpg'
+import sunset from '../assets/sunset.jpeg'
+import beach from '../assets/beach.jpg'
+import fiveguys from '../assets/5guys.jpg'
+import greenCanyon from '../assets/greenCanyon.jpg'
+import fourGuys from '../assets/4guys.jpg'
 
 const destinations = [
-    { name: 'Bali', image: bali },
-    { name: 'Bromo', image: bromo },
-    { name: 'Ijen', image: ijen },
-    { name: 'Mentawai', image: surfing },
+    { name: 'fiveguys', image: fiveguys },
+    { name: 'Green Canyon', image: greenCanyon },
+    { name: 'Surfing', image: surfing },
+    { name: 'sunset', image: sunset },
 ]
 
 const sectionVariants = {
@@ -51,7 +56,7 @@ const cardVariants = {
 export default function Home() {
 	return (
 		<>
-			<section className='relative h-screen bg-cover bg-center' style={{ backgroundImage: `url(${homeImg})` }}>
+			<section className='relative h-screen bg-cover bg-center' style={{ backgroundImage: `url(${beach})` }}>
 				<div className='absolute inset-0 bg-black opacity-50'></div>
 				<div className='relative z-10 flex flex-col items-center justify-center h-full text-white px-4'>
 					<motion.h1 
@@ -130,7 +135,7 @@ export default function Home() {
 						viewport={{ once: true, amount: 0.5 }}
 						transition={{ duration: 0.8, ease: 'easeInOut'}}
 					>
-						<img src={homeImg2} className='w-full h-auto rounded-xl shadow-lg' alt='couple under waterfall'/>
+						<img src={fourGuys} className='w-full h-auto rounded-xl shadow-lg' alt='couple under waterfall'/>
 					</motion.div>
 					<motion.div 
 						className='w-full md:w-1/2'
