@@ -3,10 +3,10 @@ import { motion } from 'framer-motion'
 
 import surfing from '../assets/surfing.jpg'
 import sunset from '../assets/sunset.jpeg'
-import beach from '../assets/beach.jpg'
-import fiveguys from '../assets/5guys.jpg'
-import greenCanyon from '../assets/greenCanyon.jpg'
-import fourGuys from '../assets/4guys.jpg'
+import beach from '../assets/beach.jpeg'
+import fiveguys from '../assets/5guys.jpeg'
+import greenCanyon from '../assets/greenCanyon.jpeg'
+import fourGuys from '../assets/4guys.jpeg'
 
 const destinations = [
     { name: 'fiveguys', image: fiveguys },

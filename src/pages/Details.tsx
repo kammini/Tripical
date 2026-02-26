@@ -1,4 +1,4 @@
-import nightSky from '../assets/nightSky.jpg'
+import nightSky from '../assets/nightSky.jpeg'
 import { motion } from 'framer-motion'
 
 const cardVariants = {
