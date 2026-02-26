@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import type { Variants } from 'framer-motion'
-import greenCanyon2 from '../assets/greenCanyon2.jpg'
-import naturalGas from '../assets/naturalGas.jpg'
+import greenCanyon2 from '../assets/greenCanyon2.jpeg'
+import naturalGas from '../assets/naturalGas.jpeg'
 
 const sectionVariants = {
 	offscreen: {
