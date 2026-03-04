@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import ContactForm from '../components/ContactForm'
-import { MapPinIcon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
+import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 
 const infoItemVariants = {
   offscreen: {
