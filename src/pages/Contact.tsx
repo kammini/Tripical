@@ -60,18 +60,6 @@ export default function Contact() {
               <div className='space-y-6'>
                 <motion.div
                   className='flex items-start'
-                  custom={0}
-                  variants={infoItemVariants}
-                  whileHover={{ scale: 1.05, x: 5, transition: { type: "spring" as const, stiffness: 300 }}}
-                >
-                  <MapPinIcon className='h-6 w-6 text-green-700 mt-1 flex-shrink-0'/>
-                  <div className='ml-4'> 
-                    <h3 className='text-lg font-semibold text-gray-700'>Address</h3>
-                    <p className='text-gray-600'>123 Adventure Lane<br/>Wandelust City, 12345</p>
-                  </div>
-                </motion.div>
-                <motion.div
-                  className='flex items-start'
                   custom={1}
                   variants={infoItemVariants}
                   whileHover={{ scale: 1.05, x: 5, transition: { type: "spring" as const, stiffness: 300 } }}
@@ -80,7 +68,7 @@ export default function Contact() {
                   <div className='ml-4'>
                     <h3 className='text-lg font-semibold text-gray-700'>Email</h3>
                     <p className='text-gray-600 hover:text-green-600'>
-                      <a>hello@tripical.com</a>
+                      <a>tripicaltripid@gmail.com</a>
                     </p>
                   </div>
                 </motion.div>
@@ -94,7 +82,7 @@ export default function Contact() {
                   <div className='ml-4'>
                     <h3 className='text-lg font-semibold text-gray-700'>Phone</h3>
                     <p className='text-gray-600 hover:text-green-600'>
-                      <a>(123) 93243-2341</a>
+                      <a>+62 823-5365-1494</a>
                     </p>
                   </div>
                 </motion.div>

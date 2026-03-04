@@ -40,7 +40,7 @@ const ContactForm = () => {
 
       if (response.ok) {
         setIsSuccess(true);
-        setServerMessage(result.status || 'Success! Your message has been sent.');
+        setServerMessage(result.message || 'Success! Your message has been sent.');
         reset();
       } else {
         setIsSuccess(false);
