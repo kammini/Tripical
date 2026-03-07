@@ -9,10 +9,10 @@ import greenCanyon from '../assets/greenCanyon.jpeg'
 import fourGuys from '../assets/4guys.jpeg'
 
 const destinations = [
-    { name: 'fiveguys', image: fiveguys },
-    { name: 'Green Canyon', image: greenCanyon },
-    { name: 'Surfing', image: surfing },
-    { name: 'sunset', image: sunset },
+    { name: 'Coastal Exploration', image: fiveguys },
+    { name: 'Jungle Canyon', image: greenCanyon },
+    { name: 'Learn to Surf', image: surfing },
+    { name: 'Sunset Experience', image: sunset },
 ]
 
 const sectionVariants = {
