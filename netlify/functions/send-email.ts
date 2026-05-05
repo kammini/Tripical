@@ -1,8 +1,6 @@
 import { Resend } from 'resend';
 import { z } from 'zod';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 const sendEmailSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters."),
   email: z.string().email("Invalid email address."),
@@ -10,6 +8,13 @@ const sendEmailSchema = z.object({
 });
 
 export default async (request: Request) => {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
+    console.error("Missing RESEND_API_KEY environment variable");
+    return new Response(JSON.stringify({ error: 'Internal server configuration error.' }), { status: 500 });
+  }
+
+  const resend = new Resend(apiKey);
   console.log("Function received request:", request.method);
   if (request.method !== 'POST') {
     return new Response(JSON.stringify({ error: 'Method not allowed' }), { status: 405 });
@@ -27,7 +32,7 @@ export default async (request: Request) => {
 
     // Send the email using Resend
     const { data, error } = await resend.emails.send({
-      from: 'onboarding@resend.dev',
+      from: 'Tripical <contact@tripical.id>',
       to: ['tripicaltripid@gmail.com'],
       subject: `New message from ${name}`,
       html: `<p>You received a new message from ${name} (${email}):</p><p>${message}</p>`,
@@ -45,8 +50,8 @@ export default async (request: Request) => {
   } catch (e) {
     // If Zod validation fails
     if (e instanceof z.ZodError) {
-      console.error("Zod validation error:", e.errors);
-      return new Response(JSON.stringify({ error: 'Validation failed', details: e.errors }), { status: 400 })
+      console.error("Zod validation error:", e.issues);
+      return new Response(JSON.stringify({ error: 'Validation failed', details: e.issues }), { status: 400 })
     }
 
     // Other potential errors
