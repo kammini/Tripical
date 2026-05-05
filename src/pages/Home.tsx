@@ -36,7 +36,7 @@ const cardVariants = {
 		y: 50,
 		opacity: 0
 	},
-	onscreen: (i: any) => ({
+	onscreen: (i: number) => ({
 		y: 0,
 		opacity: 1,
 		transition: {

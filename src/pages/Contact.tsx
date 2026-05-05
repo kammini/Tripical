@@ -7,7 +7,7 @@ const infoItemVariants = {
     opacity: 0,
     x: -50,
   },
-  onscreen: (i: any) => ({
+  onscreen: (i: number) => ({
     opacity: 1,
     x: 0,
     transition: {
