@@ -27,7 +27,7 @@ export default async (request: Request) => {
 
     // Send the email using Resend
     const { data, error } = await resend.emails.send({
-      from: 'onboarding@resend.dev',
+      from: 'Tripical <contact@tripical.id>',
       to: ['tripicaltripid@gmail.com'],
       subject: `New message from ${name}`,
       html: `<p>You received a new message from ${name} (${email}):</p><p>${message}</p>`,
