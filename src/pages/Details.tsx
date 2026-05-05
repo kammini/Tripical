@@ -6,7 +6,7 @@ const cardVariants = {
 		y: 50,
 		opacity: 0
 	},
-	onscreen: (i: any) => ({
+	onscreen: (i: number) => ({
 		y: 0,
 		opacity: 1,
 		transition: {
@@ -48,7 +48,7 @@ export default function Details() {
 								whileInView="onscreen"
 								viewport={{ once: true, amount: 0.5 }}
 								variants={cardVariants}
-								whileHover={{ y: -10, scale: 1.03, transition: { type: "spring" as const, stiffness: 300 }}}
+								whileHover={{ y: -10, scale: 1.03, transition: { type: "spring" as const, stiffness: 300 }}}
 							>
 								<h2 className='text-2xl font-bold text-gray-800 mb-4'>Travel Consulting</h2>
 								<p className='text-gray-600 leading-relaxed'>
@@ -63,7 +63,7 @@ export default function Details() {
 								whileInView="onscreen"
 								viewport={{ once: true, amount: 0.5 }}
 								variants={cardVariants}
-								whileHover={{ y: -10, scale: 1.03, transition: { type: "spring" as const, stiffness: 300 }}}
+								whileHover={{ y: -10, scale: 1.03, transition: { type: "spring" as const, stiffness: 300 }}}
 							>
 								<h2 className='text-2xl font-bold text-gray-800 mb-4'>Small Group Trip</h2>
 								<p className='text-gray-600 leading-relaxed'>
@@ -78,7 +78,7 @@ export default function Details() {
 								whileInView="onscreen"
 								viewport={{ once: true, amount: 0.5 }}
 								variants={cardVariants}
-								whileHover={{ y: -10, scale: 1.03, transition: { type: "spring" as const, stiffness: 300 }}}
+								whileHover={{ y: -10, scale: 1.03, transition: { type: "spring" as const, stiffness: 300 }}}
 							>
 								<h2 className='text-2xl font-bold text-gray-800 mb-4'>Family Trip</h2>
 								<p className='text-gray-600 leading-relaxed'>

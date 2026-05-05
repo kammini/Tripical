@@ -46,9 +46,10 @@ const ContactForm = () => {
         setIsSuccess(false);
         setServerMessage(result.message || 'Error: Failed to send message.');
       }
-    } catch (error: any) {
+    } catch (error: unknown) {
       setIsSuccess(false);
-      setServerMessage(`Error: ${error.message || 'Failed to send message.'}`)
+      const errorMessage = error instanceof Error ? error.message : 'Failed to send message.';
+      setServerMessage(`Error: ${errorMessage}`)
     }
   }
 
