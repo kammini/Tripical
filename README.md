@@ -1,73 +1,96 @@
-# React + TypeScript + Vite
+# Tripical 🌴
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Tripical** is a modern, high-performance travel and adventure exploration platform designed to help users discover breathtaking destinations and plan their next unforgettable journey.
 
-Currently, two official plugins are available:
+![Tripical Banner](src/assets/beach.jpeg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- **Interactive Destination Showcases:** Explore popular spots like Coastal Exploration, Jungle Canyons, and Sunset Experiences with stunning visuals.
+- **Seamless Navigation:** Smooth, client-side routing using React Router 7.
+- **Dynamic Animations:** Fluid and engaging user interface powered by Framer Motion.
+- **Automated Contact Form:** Secure and validated contact form using React Hook Form and Zod, integrated with Netlify Functions and Resend for instant email notifications.
+- **Responsive Design:** Fully optimized for all devices using Tailwind CSS 4.
+- **Modern Tech Stack:** Built with React 19 and Vite 7 for ultimate speed and developer experience.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend:** [React 19](https://react.dev/), [TypeScript](https://www.typescriptlang.org/), [Vite 7](https://vitejs.dev/)
+- **Styling:** [Tailwind CSS 4](https://tailwindcss.com/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Routing:** [React Router 7](https://reactrouter.com/)
+- **Forms & Validation:** [React Hook Form](https://react-hook-form.com/), [Zod](https://zod.dev/)
+- **Backend/Serverless:** [Netlify Functions](https://www.netlify.com/products/functions/)
+- **Email Service:** [Resend](https://resend.com/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🏁 Getting Started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Prerequisites
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- [Netlify CLI](https://docs.netlify.com/cli/get-started/) (optional, for local function testing)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/tripical.git
+   cd tripical
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables:**
+   Create a `.env` file in the root directory and add your Resend API key:
+   ```env
+   RESEND_API_KEY=re_your_api_key_here
+   ```
+
+### Running Locally
+
+To start the development server:
+```bash
+npm run dev
+```
+The app will be available at `http://localhost:5173`.
+
+To test Netlify Functions locally:
+```bash
+npm run dev:netlify
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🏗️ Project Structure
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```text
+├── netlify/
+│   └── functions/        # Serverless functions (Email handling)
+├── src/
+│   ├── assets/           # Images and static assets
+│   ├── components/       # Reusable UI components
+│   ├── pages/            # Main application pages
+│   ├── App.tsx           # Main application entry and routing
+│   └── main.tsx          # React mounting point
+├── netlify.toml          # Netlify configuration
+└── vite.config.ts        # Vite configuration
 ```
+
+## 🚀 Deployment
+
+This project is optimized for deployment on **Netlify**.
+
+1. Connect your GitHub repository to Netlify.
+2. Set the build command to `npm run build`.
+3. Set the publish directory to `dist`.
+4. Add the `RESEND_API_KEY` to your Netlify Environment Variables.
+
+## 📄 License
+
+This project is MIT licensed.
+
+---
+
+Developed with ❤️ for adventurers everywhere.
