@@ -1,5 +1,7 @@
 # Tripical: Premium Travel & Adventure Platform
 
+**Live at: [tripical.id](https://tripical.id)**   
+
 **Tripical** is a high-performance, boutique travel platform designed to deliver immersive destination experiences. This project serves as both a production-ready travel interface and a technical deep-dive into the latest advancements in modern web development.
 
 ## 🌐 Project Vision
