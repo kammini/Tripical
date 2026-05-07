@@ -2,8 +2,6 @@
 
 **Tripical** is a high-performance, boutique travel platform designed to deliver immersive destination experiences. This project serves as both a production-ready travel interface and a technical deep-dive into the latest advancements in modern web development.
 
-![Tripical Banner](src/assets/beach.jpeg)
-
 ## 🌐 Project Vision
 
 Tripical was built to bridge the gap between aesthetic discovery and functional travel planning. It provides users with a curated look at breathtaking destinations while maintaining a focus on performance, responsiveness, and interactive storytelling.
